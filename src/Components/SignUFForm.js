@@ -19,6 +19,7 @@ const SignUFForm = () => {
   const [password, setPassword] = useState('');
   const [username, setUsername] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [avatar, setAvatar] = useState(null);
   const {setUserInfo} = useContext(UserContext)
 
 
@@ -146,7 +147,23 @@ const SignUFForm = () => {
                             placeholder={"Enter your password here"}
                         />
                 </div>
-                
+                <div className="waitlist_post">
+                    <label className='form_label'>Display Image</label>
+                    <input 
+                        type="file"
+                        onChange={(e) => setAvatar(e.target.files)}
+                        className='custom-file-input'
+                        accept="image/*"
+                    /><br/>
+
+                    <div className='image-preview-container'>
+                        {avatar && Array.from(avatar).map((image, index) => (
+                        <div key={index} className='image-preview'>
+                            <img src={URL.createObjectURL(image)} alt={`Images ${index}`} />
+                        </div>
+                        ))}
+                    </div>
+                </div>
                 <button className="sign_bt" >Submit</button>
 
             </form>

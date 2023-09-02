@@ -19,7 +19,7 @@ const SignUSForm = () => {
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  // const [avatar, setAvatar] = useState(null);
+  const [avatar, setAvatar] = useState(null);
   const { setUserInfo } = useContext(UserContext);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -167,7 +167,7 @@ const SignUSForm = () => {
               placeholder={"Enter your password here"}
             />
           </div>
-          {/* <div className="waitlist_post">
+          <div className="waitlist_post">
             <label className="form_label">Display Image</label>
             <input
               type="file"
@@ -187,8 +187,8 @@ const SignUSForm = () => {
                     />
                   </div>
                 ))}
-            </div> */}
-          {/* </div> */}
+            </div>
+          </div>
 
           {/* <button className="sign_bt">Submit</button> */}
           <button className='sign_bt' disabled={isLoading}>
