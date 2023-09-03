@@ -98,10 +98,10 @@ function SignISForm() {
             />
           </div>
 
-          {/* <Link to='/uploadstoreproduct' >
+          <Link to='/uploadstoreproduct' >
             <button className="sign_bt">Submit</button>
 
-          </Link> */}
+          </Link>
           {/* <button className="sign_bt">Submit</button> */}
 
         </form>
