@@ -84,7 +84,7 @@ function Navbar() {
           </div>
           <div className='menuitem'>
             <BsPerson className='menuicon' size={30}/>
-            <div className='menuident'>Profile</div>
+            <div className='menuident'>My Profile</div>
           </div>
           
         </div>

@@ -1,12 +1,15 @@
 .navbar {
     display: flex;
-    width: var(--container-width-lg);
+    /* width: var(--container-width-lg); */
+    width: 100%;
     justify-content: space-between;
     background-color: var(--color-white);
+    align-items: center;
     margin: auto;
     /* box-shadow: 4px 0px var(--color-tertiary-tint2); */
     height: 70px;
     /* position: fixed; */
+    border-bottom: 2px solid whitesmoke;
 }
 
 .navlogoi {

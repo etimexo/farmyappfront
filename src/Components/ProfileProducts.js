@@ -16,11 +16,14 @@ function ProfileProducts() {
   return (
     <div className='profileproduct'>
 
-      {userInfo.products.length === 0 && <div><ImFilesEmpty size={200} /><h1>No products uploaded yet.</h1></div>
+      {userInfo.products?.length === 0 && <div>
+        <ImFilesEmpty size={200} />
+        <h1>No products uploaded yet.</h1>
+        </div>
 
       }
         
-        {userInfo.products.length > 0 && userInfo.products.map(product => (
+        {userInfo.products?.length > 0 && userInfo.products.map(product => (
         <EachFarmProductadmin {...product} key={product._id} />
       ))}
 
